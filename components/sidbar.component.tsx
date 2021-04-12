@@ -17,13 +17,11 @@ const Sidebar = () => {
       <h3 className='my-4 text-3xl font-medium tracking-wider font-romanesco'>
         <span className='text-indigo'>Chris </span>Shockley
       </h3>
-      <p className='px-2 py-1 my-3 bg-gray-200 rounded-full '>
-        Software Engineer
-      </p>
+      <p className='px-2 py-1 my-3 rounded-full bg-gray '>Software Engineer</p>
       <a
         href='#'
         download='#'
-        className='flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer'
+        className='flex items-center justify-center px-2 py-1 my-2 rounded-full cursor-pointer bg-gray'
       >
         <GrCloudDownload className='w-5 h-5' />
         <span>Download Resume</span>
@@ -53,7 +51,7 @@ const Sidebar = () => {
         </a>
       </div>
       {/* Address */}
-      <div className='my-5 py-4 bg-gray-200 style={{marginLeft:"-1rem", marginRight: "-1rem" }}'>
+      <div className='my-5 py-4 bg-gray style={{marginLeft:"-1rem", marginRight: "-1rem" }}'>
         <div className='flex items-center justify-center'>
           <GoLocation className='' />
           <span>Cleveland, OH</span>
@@ -62,12 +60,12 @@ const Sidebar = () => {
       </div>
       {/* Email Button */}
       <button
-        className='w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-gray-200 via-indigo-300 to-blue-400 focus:outline-none'
+        className='w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-eyes to-ice focus:outline-none'
         onClick={() => window.open('mailto: cishockleysr@gmail.com')}
       >
         Email Me
       </button>
-      <button className='w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-gray-200 via-indigo-300 to-blue-400'>
+      <button className='w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-eyes to-ice'>
         Toggle Me
       </button>
     </div>

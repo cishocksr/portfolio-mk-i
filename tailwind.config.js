@@ -7,8 +7,23 @@ module.exports = {
     },
     extend: {
       colors: {
-        indigo: {
-          DEFAULT: '#5c6ac4',
+        gray: {
+          DEFAULT: '#b8b8b7',
+        },
+        snow: {
+          DEFAULT: '#E7ECEF',
+        },
+        blue: {
+          DEFAULT: '#274c77',
+        },
+        ice: {
+          DEFAULT: '#6096ba',
+        },
+        eyes: {
+          DEFAULT: '#A3CEF1',
+        },
+        desert: {
+          DEFAULT: '#8b8c89',
         },
       },
     },

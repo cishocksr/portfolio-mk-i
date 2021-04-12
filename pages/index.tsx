@@ -1,5 +1,13 @@
+import { services } from '../data';
+
 const index = () => {
-  return <div>We are working!</div>;
+  console.log(services);
+
+  return (
+    <div>
+      <h1>We are working</h1>
+    </div>
+  );
 };
 
 export default index;
