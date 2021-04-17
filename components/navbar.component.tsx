@@ -1,6 +1,6 @@
-import { FunctionComponent, useEffect, useState } from 'react';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { FunctionComponent, useEffect, useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const NavItem: FunctionComponent<{
   activeItem: string;
@@ -11,7 +11,7 @@ const NavItem: FunctionComponent<{
   return activeItem !== name ? (
     <Link href={route}>
       <a>
-        <span className='hover:text-indigo' onClick={() => setActiveItem(name)}>
+        <span className="hover:text-indigo" onClick={() => setActiveItem(name)}>
           {name}
         </span>
       </a>
@@ -20,46 +20,46 @@ const NavItem: FunctionComponent<{
 };
 
 const Navbar = () => {
-  const [activeItem, setActiveItem] = useState<string>('');
+  const [activeItem, setActiveItem] = useState<string>("");
 
   const { pathname } = useRouter();
 
   useEffect(() => {
-    if (pathname === '/') setActiveItem('About');
-    if (pathname === '/projects') setActiveItem('Projects');
-    if (pathname === '/blog') setActiveItem('Blog');
-    if (pathname === '/contact') setActiveItem('Contact');
+    if (pathname === "/") setActiveItem("Home");
+    if (pathname === "/projects") setActiveItem("Projects");
+    if (pathname === "/about") setActiveItem("About");
+    if (pathname === "/contact") setActiveItem("Contact");
   }, []);
 
   return (
-    <div className='flex justify-between px-5 py-3 my-3'>
-      <span className='text-xl font-bold border-b-4 text-indigo border-indigo md:2xl'>
+    <div className="flex justify-between px-5 py-3 my-3">
+      <span className="text-xl font-bold border-b-4 text-indigo border-indigo md:2xl">
         {activeItem}
       </span>
-      <div className='flex space-x-5 text-lg '>
+      <div className="flex space-x-5 text-lg ">
         <NavItem
           activeItem={activeItem}
           setActiveItem={setActiveItem}
-          name='About'
-          route='/'
+          name="Home"
+          route="/"
         />
         <NavItem
           activeItem={activeItem}
           setActiveItem={setActiveItem}
-          name='Projects'
-          route='/projects'
+          name="About"
+          route="/about"
         />
         <NavItem
           activeItem={activeItem}
           setActiveItem={setActiveItem}
-          name='Contact'
-          route='/contact'
+          name="Projects"
+          route="/projects"
         />
         <NavItem
           activeItem={activeItem}
           setActiveItem={setActiveItem}
-          name='Blog'
-          route='/blog'
+          name="Contact"
+          route="/contact"
         />
       </div>
     </div>

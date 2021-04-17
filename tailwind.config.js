@@ -1,35 +1,39 @@
 module.exports = {
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     fontFamily: {
-      romanesco: ['Romanesco'],
+      romanesco: ["Romanesco"],
+    },
+    boxShadow: {
+      "custom-light": "0 0 10px #313131",
+      "custom-dark": "5px 5px 10px #0a0c0e, -5px -5px 10px #14161c",
     },
     extend: {
       colors: {
-        gray: {
-          DEFAULT: '#b8b8b7',
+        azure: {
+          DEFAULT: "#b4e1ff",
+          100: "#6fc0ff",
+          200: "#369bf4",
+          300: "#1078d4",
+          400: "#0a54b5",
+          500: "#053391",
+          600: "#021663",
         },
-        snow: {
-          DEFAULT: '#E7ECEF',
-        },
-        blue: {
-          DEFAULT: '#274c77',
-        },
-        ice: {
-          DEFAULT: '#6096ba',
-        },
-        eyes: {
-          DEFAULT: '#A3CEF1',
-        },
-        desert: {
-          DEFAULT: '#8b8c89',
+        night: {
+          DEFAULT: "#010101",
+          100: "#0a0b1e",
+          200: "#16181d",
+          500: "#0f1115",
+          700: "#202125",
         },
       },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      boxShadow: ["dark"],
+    },
   },
   plugins: [],
 };
