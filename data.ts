@@ -7,9 +7,6 @@ import { iProject, Service, Skill } from "./types";
 
 import { BsCircleFill } from "react-icons/bs";
 
-
-
-
 export const services: Service[] = [
   {
     Icon: RiComputerLine,
@@ -26,13 +23,13 @@ export const services: Service[] = [
   {
     Icon: AiOutlineApi,
     title: "API Development",
-    about:
-      "I can build and implement robust  REST API using <b>Node API</b> ",
+    about: "I can build and implement robust  REST API using <b>Node API</b> ",
   },
   {
     Icon: SiGooglescholar,
     title: "Lifelong Learner",
-    about: "Always striving to grow as an enginner with <b>Leet Code</b>, and other available tools. ",
+    about:
+      "Always striving to grow as an enginner with <b>Leet Code</b>, and other available tools. ",
   },
   {
     Icon: AiOutlineAntDesign,
@@ -105,7 +102,7 @@ export const tools: Skill[] = [
 ];
 
 export const projects: iProject[] = [
-  { 
+  {
     name: "COVID Tracker",
     description:
       "This app shows a statistical view about corona virus over the world",
@@ -126,82 +123,89 @@ export const projects: iProject[] = [
     tech_category: ["React", "firebase", "Framer Motion"],
   },
 
-  // {
-  //   name: "Dev Talks",
-  //   image_path: "/test_images/dev.jpg",
-  //   deployed_url: "https://dev-talks.herokuapp.com/",
-  //   github_url: "https://github.com/Dey-Sumit/Dev-talks",
-  //   category: ["node", "mongo", "react"],
-  //   description:
-  //     "Social Media app for developers who can share project,create posts,etc...",
-  //   tech_category: [
-  //     "React",
-  //     "Redux",
-  //     "Node",
-  //     "Express",
-  //     "Mongo",
-  //     "REST API",
-  //     "Bootstrap",
-  //   ],
-  // },
+  {
+    name: "Dev Talks",
+    image_path: "/test_images/dev.jpg",
+    deployed_url: "https://dev-talks.herokuapp.com/",
+    github_url: "https://github.com/Dey-Sumit/Dev-talks",
+    category: ["node", "mongo", "react"],
+    description:
+      "Social Media app for developers who can share project,create posts,etc...",
+    tech_category: [
+      "React",
+      "Redux",
+      "Node",
+      "Express",
+      "Mongo",
+      "REST API",
+      "Bootstrap",
+    ],
+  },
 
-  // {
-  //   name: "Realtime Chat App",
-  //   image_path: "/test_images/chatapp.jpg",
-  //   deployed_url: "https://sumit-chat.netlify.app/",
-  //   github_url: "https://github.com/Dey-Sumit/chat-app-socket.io-react-node",
-  //   category: ["node", "react"],
-  //   description:
-  //     "Basic Realtime Chat App where one can create a room can talk to each other",
-  //   tech_category: ["React", "Node", "Express", "Socket", "Bootstrap"],
-  // },
+  {
+    name: "Realtime Chat App",
+    image_path: "/test_images/chatapp.jpg",
+    deployed_url: "https://sumit-chat.netlify.app/",
+    github_url: "https://github.com/Dey-Sumit/chat-app-socket.io-react-node",
+    category: ["node", "react"],
+    description:
+      "Basic Realtime Chat App where one can create a room can talk to each other",
+    tech_category: ["React", "Node", "Express", "Socket", "Bootstrap"],
+  },
 
-  // {
-  //   name: "Tweeter Clone",
-  //   image_path: "/test_images/tweetme.jpg",
-  //   deployed_url: "http://sumaxtweetme.pythonanywhere.com/",
-  //   github_url: "https://github.com/Dey-Sumit/tweetme",
-  //   category: ["react"],
-  //   description:
-  //     "First Django Project :) | Typical Social Media App where one can post,like ,comment etc",
-  //   tech_category: ["React", "Django", "Django REST API"],
-  // },
+  {
+    name: "Tweeter Clone",
+    image_path: "/test_images/tweetme.jpg",
+    deployed_url: "http://sumaxtweetme.pythonanywhere.com/",
+    github_url: "https://github.com/Dey-Sumit/tweetme",
+    category: ["react"],
+    description:
+      "First Django Project :) | Typical Social Media App where one can post,like ,comment etc",
+    tech_category: ["React", "Django", "Django REST API"],
+  },
 
-  // {
-  //   name: "Color Classification using tf.js",
-  //   image_path: "/test_images/color.jpg",
-  //   deployed_url: "!#",
-  //   github_url: "https://github.com/Dey-Sumit/color-classification",
-  //   category: ["express"],
-  //   description:
-  //     "Tried ML with JS :) | this app classifies a color using CNN algorithm in browser",
-  //   tech_category: ["Express", "TensorFlow.js", "Vanilla js"],
-  // },
-  // {
-  //   name: "YouTube using YouTube ",
-  //   image_path: "/test_images/youtubeClone.png",
-  //   deployed_url: "https://not-utube.web.app/",
-  //   github_url: "https://github.com/Dey-Sumit/youtube-clone-tutorial-up",
-  //   category: ["express"],
-  //   description:
-  //     'Full(almost) Functional YouTube replica where one can login with his/her youtube account to enjoy "not-YouTube".User can like a video,comment on a video & Much More ',
-  //   tech_category: [
-  //     "React",
-  //     "Redux",
-  //     "Firebase Auth",
-  //     "YouTube API",
-  //     "Sass",
-  //     "Bootstrap",
-  //   ],
-  // },
-  // {
-  //   name: "Football App",
-  //   image_path: "/test_images/football.png",
-  //   deployed_url: "https://o-my-goal.web.app/",
-  //   github_url: "https://github.com/Dey-Sumit/football-app",
-  //   category: ["react"],
-  //   description:
-  //     "o my goal replica where an user can keep an eye on his favorite club.This app will keep providing \n all the statistics of that club.all the fans can also chat ",
-  //   tech_category: ["React", "Redux", "Firebase Auth", "API", "Sass", "Bootstrap"],
-  // },
+  {
+    name: "Color Classification using tf.js",
+    image_path: "/test_images/color.jpg",
+    deployed_url: "!#",
+    github_url: "https://github.com/Dey-Sumit/color-classification",
+    category: ["express"],
+    description:
+      "Tried ML with JS :) | this app classifies a color using CNN algorithm in browser",
+    tech_category: ["Express", "TensorFlow.js", "Vanilla js"],
+  },
+  {
+    name: "YouTube using YouTube ",
+    image_path: "/test_images/youtubeClone.png",
+    deployed_url: "https://not-utube.web.app/",
+    github_url: "https://github.com/Dey-Sumit/youtube-clone-tutorial-up",
+    category: ["express"],
+    description:
+      'Full(almost) Functional YouTube replica where one can login with his/her youtube account to enjoy "not-YouTube".User can like a video,comment on a video & Much More ',
+    tech_category: [
+      "React",
+      "Redux",
+      "Firebase Auth",
+      "YouTube API",
+      "Sass",
+      "Bootstrap",
+    ],
+  },
+  {
+    name: "Football App",
+    image_path: "/test_images/football.png",
+    deployed_url: "https://o-my-goal.web.app/",
+    github_url: "https://github.com/Dey-Sumit/football-app",
+    category: ["react"],
+    description:
+      "o my goal replica where an user can keep an eye on his favorite club.This app will keep providing \n all the statistics of that club.all the fans can also chat ",
+    tech_category: [
+      "React",
+      "Redux",
+      "Firebase Auth",
+      "API",
+      "Sass",
+      "Bootstrap",
+    ],
+  },
 ];
