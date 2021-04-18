@@ -20,6 +20,9 @@ module.exports = {
           500: "#053391",
           600: "#021663",
         },
+        page: {
+          DEFAULT: "#f8f8ff",
+        },
         night: {
           DEFAULT: "#010101",
           100: "#0a0b1e",

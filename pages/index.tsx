@@ -22,7 +22,7 @@ const index = () => {
         <span className="text-center">Omnium rerum principa parva sunt</span>
       </h6>
       <div
-        className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-night-100"
+        className="flex-grow p-4 mt-5 bg-gradient-to-tr from-gray-200 via-gray-400 to-gray-600 dark:bg-night-100"
         style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
       >
         <h4 className="my-3 text-xl font-semibold tracking-wide">
