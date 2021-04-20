@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import { motion } from "framer-motion";
 
-import { Skill } from "../types";
+import { Skill } from "../helpers/types";
 
 const Bar: FunctionComponent<{ value: Skill }> = ({
   value: { Icon, level, name },

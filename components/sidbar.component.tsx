@@ -26,15 +26,15 @@ const Sidebar = () => {
         quality="100"
       />
       <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
-        <span className=" text-azure-400">Chris</span> Shockley
+        <span className=" text-azure-4cod00">Chris</span> Shockley
       </h3>
       <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark:bg-black-500">
         Software Engineer
       </p>
       {/* Resume */}
       <a
-        href="#"
-        download="#"
+        href="/assets/lambda-resume,pdf"
+        download="lambda-resume.pdf"
         className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500"
       >
         <AiOutlineDownload className="w-6 h-6 mr-2" />

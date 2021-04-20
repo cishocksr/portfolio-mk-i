@@ -1,7 +1,7 @@
-import { services } from "../data";
+import { services } from "../helpers/data";
 import ServiceCard from "../components/serviceCard.component";
 import { motion } from "framer-motion";
-import { fadeInUp, routeFade, stagger } from "../animations";
+import { fadeInUp, routeFade, stagger } from "../helpers/animations";
 
 const index = () => {
   return (
@@ -12,12 +12,14 @@ const index = () => {
       animate="animate"
       exit="exit"
     >
-      <h6 className="text-center">Welcome!</h6>
-      <h6 className="my-3 text-base font-medium">
+      <h6 className="text-3xl font-bold text-center font-calli text-azure-600">
+        Welcome!
+      </h6>
+      <h6 className="my-3 text-base font-medium text-libre">
         Take a stroll through my growth as an engineer. You can find some of my
-        pervious work, learn a little of who I am, there is a blog for some
-        light reading, and if you would like we can connect and work on
-        something that can help humanity!
+        pervious work, learn a little of who I am, and if you would like, we can
+        work on something that will help us grow as individuals, which inturn
+        helps the world!
         <br />
         <span className="text-center">Omnium rerum principa parva sunt</span>
       </h6>

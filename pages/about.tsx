@@ -1,7 +1,7 @@
 import Bar from "../components/bar";
-import { languages, tools } from "../data";
+import { languages, tools } from "../helpers/data";
 import { motion } from "framer-motion";
-import { fadeInUp } from "../animations";
+import { fadeInUp } from "../helpers/animations";
 
 const About = () => {
   const variants = {
@@ -19,13 +19,12 @@ const About = () => {
       {/* //! Education & Experience */}
       <div className="grid gap-6 md:grid-cols-2">
         <motion.div variants={fadeInUp} initial="initial" animate="animate">
-          <h5 className="my-3 text-2xl font-bold">Who Am I?</h5>
+          <h5 className="my-3 text-2xl font-bold text-libre">Who Am I?</h5>
           <div className="">
-            <h5 className="my-2 text-xl font-bold">Lambda School</h5>
-            <p className="font-semibold">Full Stack Web Development</p>
-            <p className="my-3">
-              I recently finished a full stack web development bootcamp,
-              specializing in Javascript and including computer science.
+            <p className="my-3 leading-relaxed">
+              I am a life long learner, that has fallen in love with code. I am
+              a veteran of the US Navy, and the father of four. I am commited to
+              building software that will help move humanity foreward.
             </p>
           </div>
         </motion.div>
@@ -39,7 +38,10 @@ const About = () => {
           <div className="">
             <h5 className="my-2 text-xl font-bold">Lambda School</h5>
             <p className="font-semibold">Full Stack Web Development</p>
-            <p className="my-3">I don't know why I am doing this job</p>
+            <p className="my-3">
+              I recently finished a full stack web development bootcamp,
+              specializing in Javascript and including computer science.
+            </p>
           </div>
         </motion.div>
       </div>

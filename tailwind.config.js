@@ -3,7 +3,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     fontFamily: {
-      romanesco: ["Romanesco"],
+      libre: ["Libre Baskerville"],
+      calli: ["Calligraffitti"],
+      kaushan: ["Kaushan Script"],
     },
     boxShadow: {
       "custom-light": "0 0 10px #313131",
