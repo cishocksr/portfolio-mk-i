@@ -1,25 +1,43 @@
+import { createRef, useState } from 'react';
 import emailjs from 'emailjs-com';
+import ReCAPTCHA from 'react-recaptcha';
 
 const contact = () => {
+  const [recaptchaLoad, setRecaptchaLoad] = useState(false);
+  const [isVerified, setIsVerified] = useState(false);
+
+  const recaptchLoaded = () => {
+    setRecaptchaLoad(true);
+  };
+
+  const verifiedRecaptcha = (response) => {
+    if (response) {
+      setIsVerified(true);
+    }
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-        'service_i4vdld8',
-        'template_pvyl988',
-        e.target,
-        'user_2PDvAE1rhdUHQLs0O0Yr3'
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
+    if (recaptchaLoad && isVerified) {
+      emailjs
+        .sendForm(
+          process.env.EMAILJS_SERVICE_ID,
+          process.env.EMAILJS_TEMPLATE_ID,
+          e.target,
+          process.env.EMAILJS_USER_ID
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+      e.target.reset();
+    } else {
+      console.error('Please check reCaptcha');
+    }
   };
 
   return (
@@ -40,9 +58,9 @@ const contact = () => {
               type='text'
               placeholder='First Name'
             />
-            <p className='text-xs italic text-red-500'>
+            {/* <p className='text-xs italic text-red-500'>
               Please fill out this field.
-            </p>
+            </p> */}
           </div>
           <div className='w-full px-3 md:w-1/2'>
             <label
@@ -90,6 +108,14 @@ const contact = () => {
               id='message'
               name='message'
             ></textarea>
+            <div>
+              <ReCAPTCHA
+                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                render='explicit'
+                onloadCallback={recaptchLoaded}
+                verifyCallback={verifiedRecaptcha}
+              />
+            </div>
             <p className='text-xs italic text-gray-600'></p>
           </div>
         </div>

@@ -1,7 +1,6 @@
 import { RiComputerLine } from 'react-icons/ri';
 import { FaServer } from 'react-icons/fa';
 import { AiFillEdit, AiOutlineAntDesign, AiOutlineApi } from 'react-icons/ai';
-import { MdDeveloperMode } from 'react-icons/md';
 import { SiGooglescholar } from 'react-icons/si';
 import { GiMeditation } from 'react-icons/gi';
 import { iProject, Service, Skill } from './helpers/types';
