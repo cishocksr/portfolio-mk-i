@@ -3,14 +3,16 @@ import emailjs from 'emailjs-com';
 import ReCAPTCHA from 'react-google-recaptcha';
 
 const contact = () => {
+  let captcha;
+
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
       .sendForm(
-        'service_i4vdld8',
-        'template_pvyl988',
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
         e.target,
-        'user_2PDvAE1rhdUHQLs0O0Yr3'
+        process.env.NEXT_PUBLIC_USER_ID
       )
       .then(
         (result) => {
@@ -20,6 +22,11 @@ const contact = () => {
           console.log(error.text);
         }
       );
+    e.target.reset();
+  };
+
+  const resetCaptcha = () => {
+    captcha.reset;
   };
 
   return (
@@ -92,6 +99,7 @@ const contact = () => {
               name='message'
             ></textarea>
             <ReCAPTCHA
+              // ref={e => (this.captcha = e)}
               render='explicit'
               sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
               onChange={sendEmail}
