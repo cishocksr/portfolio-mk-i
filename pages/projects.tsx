@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import ProjectCard from '../components/projectCard.component';
 import ProjectsNavbar from '../components/project-navbar.component';
-import { projects as projectsData } from '../data/data';
+import { projects as projectsData } from '../data';
 import { Category } from '../helpers/types';
 import { motion } from 'framer-motion';
 import { fadeInUp, stagger } from '../helpers/animations';

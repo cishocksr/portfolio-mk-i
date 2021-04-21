@@ -1,5 +1,5 @@
 import Bar from '../components/bar';
-import { languages, tools } from '../data/data';
+import { languages, tools } from '../data';
 import { motion } from 'framer-motion';
 import { fadeInUp } from '../helpers/animations';
 
