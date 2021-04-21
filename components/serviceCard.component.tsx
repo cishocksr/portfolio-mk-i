@@ -1,5 +1,5 @@
-import React, { FunctionComponent } from "react";
-import { Service } from "../helpers/types";
+import React, { FunctionComponent } from 'react';
+import { Service } from '../helpers/types';
 
 const ServiceCard: FunctionComponent<{
   service: Service;
@@ -10,10 +10,10 @@ const ServiceCard: FunctionComponent<{
     };
   };
   return (
-    <div className="flex items-center p-2 space-x-4">
-      <Icon className="w=12 h-12 text-blue" />
-      <div className="">
-        <h4 className="font-bold">{title}</h4>
+    <div className='flex items-center p-2 space-x-4'>
+      <Icon className='w-16 h-12 text-blue' />
+      <div className=''>
+        <h4 className='font-bold'>{title}</h4>
         <p dangerouslySetInnerHTML={createMarkup()} />
       </div>
     </div>

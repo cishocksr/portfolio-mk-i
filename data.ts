@@ -1,9 +1,9 @@
 import { RiComputerLine } from 'react-icons/ri';
 import { FaServer } from 'react-icons/fa';
-import { AiOutlineAntDesign, AiOutlineApi } from 'react-icons/ai';
-import { MdDeveloperMode } from 'react-icons/md';
+import { AiFillEdit, AiOutlineAntDesign, AiOutlineApi } from 'react-icons/ai';
 import { SiGooglescholar } from 'react-icons/si';
-import { iProject, Service, Skill } from './types';
+import { GiMeditation } from 'react-icons/gi';
+import { iProject, Service, Skill } from './helpers/types';
 
 import { BsCircleFill } from 'react-icons/bs';
 
@@ -12,18 +12,18 @@ export const services: Service[] = [
     Icon: RiComputerLine,
     title: 'Frontend Development',
     about:
-      "I enjoy building scalable and dynamic SPA's using <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ",
+      'I can build complete SPA, scalable and dynamic with <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ',
   },
   {
     Icon: FaServer,
     title: 'Backend  Development',
     about:
-      'I am able to use and build relational and nosql databases as well as servers, and api using <b>Express </b> & other popular frameworks',
+      'I enjoy to use and build relational and nosql databases as well as servers, and api using <b>Express </b> & other popular frameworks',
   },
   {
     Icon: AiOutlineApi,
     title: 'API Development',
-    about: 'I can build and implement robust  REST API using <b>Node API</b> ',
+    about: 'I can build and implement robust  REST API using <b>Node.JS</b> ',
   },
   {
     Icon: SiGooglescholar,
@@ -32,16 +32,16 @@ export const services: Service[] = [
       'Always striving to grow as an enginner with <b>Leet Code</b>, and other available tools. ',
   },
   {
-    Icon: AiOutlineAntDesign,
-    title: 'UI/UX designer',
+    Icon: AiFillEdit,
+    title: 'Writer',
     about:
-      'stunning user interface designer using <b>Figma</b>  and  <b>Framer</b> ',
+      'Enjoy writing about my journey as a engineer. Always looking to help others grow.',
   },
   {
-    Icon: RiComputerLine,
-    title: 'Whatever',
+    Icon: GiMeditation,
+    title: 'Human Being',
     about:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!',
+      'I am commited to being the best human being that I can be, and help anyone else to reach the same!',
   },
 ];
 
@@ -54,7 +54,7 @@ export const languages: Skill[] = [
   {
     Icon: BsCircleFill,
     name: 'Java Script',
-    level: '60',
+    level: '70',
   },
   {
     Icon: BsCircleFill,
