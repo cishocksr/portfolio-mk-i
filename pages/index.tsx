@@ -20,8 +20,6 @@ const index = () => {
         pervious work, learn a little of who I am, and if you would like, we can
         work on something that will help us grow as individuals, which inturn
         helps the world!
-        <br />
-        <span className='text-center'>Omnium rerum principa parva sunt</span>
       </h6>
       <div
         className='flex-grow p-4 mt-5 bg-gradient-to-tr from-gray-200 via-gray-400 to-gray-600 dark:bg-night-100'
