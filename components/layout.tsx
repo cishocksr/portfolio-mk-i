@@ -7,7 +7,7 @@ export default function Layout({
   return (
     <div>
       <Head>
-        <link rel='shortcut icon' href='/images/dev-logo-png' />
+        <link rel='shortcut icon' href='/images/favicon.ico' />
         <title>{title} | Chris Shockley</title>
       </Head>
 

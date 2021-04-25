@@ -1,6 +1,6 @@
 import { RiComputerLine } from 'react-icons/ri';
 import { FaServer } from 'react-icons/fa';
-import { AiFillEdit, AiOutlineAntDesign, AiOutlineApi } from 'react-icons/ai';
+import { AiFillEdit, AiOutlineApi } from 'react-icons/ai';
 import { SiGooglescholar } from 'react-icons/si';
 import { GiMeditation } from 'react-icons/gi';
 import { iProject, Service, Skill } from './helpers/types';
@@ -23,7 +23,7 @@ export const services: Service[] = [
   {
     Icon: AiOutlineApi,
     title: 'API Development',
-    about: 'I can build and implement robust  REST API using <b>Node.JS</b> ',
+    about: 'I can build and implement robust  REST API using <b>Node.js</b> ',
   },
   {
     Icon: SiGooglescholar,
@@ -48,12 +48,7 @@ export const services: Service[] = [
 export const languages: Skill[] = [
   {
     Icon: BsCircleFill,
-    name: 'Python',
-    level: '45',
-  },
-  {
-    Icon: BsCircleFill,
-    name: 'Java Script',
+    name: 'JavaScript',
     level: '70',
   },
   {
@@ -63,17 +58,22 @@ export const languages: Skill[] = [
   },
   {
     Icon: BsCircleFill,
-    name: 'Node JS',
+    name: 'Node.js',
     level: '65',
   },
   {
     Icon: BsCircleFill,
-    name: 'Typescript',
+    name: 'TypeScript',
     level: '55',
   },
   {
     Icon: BsCircleFill,
-    name: 'TailwindCss',
+    name: 'Python',
+    level: '45',
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'Tailwindcss',
     level: '65',
   },
 ];
@@ -81,14 +81,15 @@ export const languages: Skill[] = [
 export const tools: Skill[] = [
   {
     Icon: BsCircleFill,
-    name: 'Git',
-    level: '85',
-  },
-  {
-    Icon: BsCircleFill,
     name: 'Visual Studio Code',
     level: '90',
   },
+  {
+    Icon: BsCircleFill,
+    name: 'Git',
+    level: '85',
+  },
+
   {
     Icon: BsCircleFill,
     name: 'Zoom',
