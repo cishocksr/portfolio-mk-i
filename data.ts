@@ -12,7 +12,7 @@ export const services: Service[] = [
     Icon: RiComputerLine,
     title: 'Frontend Development',
     about:
-      'I can build complete SPA, scalable and dynamic with <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ',
+      'I can build complete SPA, that is scalable and dynamic with <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ',
   },
   {
     Icon: FaServer,
@@ -29,7 +29,7 @@ export const services: Service[] = [
     Icon: SiGooglescholar,
     title: 'Lifelong Learner',
     about:
-      'Always striving to grow as an enginner with <b>Leet Code</b>, and other available tools. ',
+      'Always striving to grow as an engineer with <b>Leet Code</b>, and other available tools. ',
   },
   {
     Icon: AiFillEdit,
@@ -41,7 +41,7 @@ export const services: Service[] = [
     Icon: GiMeditation,
     title: 'Human Being',
     about:
-      'I am commited to being the best human being that I can be, and help anyone else to reach the same!',
+      'I am committed to being the best human being that I can be, while helping anyone else to reach the same!',
   },
 ];
 
