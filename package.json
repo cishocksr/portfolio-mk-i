@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.1",
     "emailjs-com": "^2.6.4",
     "formix": "^0.0.1",
     "framer-motion": "3.10.3",

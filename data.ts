@@ -1,21 +1,25 @@
-import { RiComputerLine } from 'react-icons/ri';
-import { FaServer } from 'react-icons/fa';
-import { AiFillEdit, AiOutlineApi } from 'react-icons/ai';
 import { SiGooglescholar } from 'react-icons/si';
+import { AiFillEdit, AiOutlineApi } from 'react-icons/ai';
 import { GiMeditation } from 'react-icons/gi';
 import { iProject, Service, Skill } from './helpers/types';
+import {
+  DesktopComputerIcon,
+  ServerIcon,
+  BookOpenIcon,
+  RssIcon,
+} from '@heroicons/react/outline';
 
 import { BsCircleFill } from 'react-icons/bs';
 
 export const services: Service[] = [
   {
-    Icon: RiComputerLine,
+    Icon: DesktopComputerIcon,
     title: 'Frontend Development',
     about:
       'I can build complete SPA, that is scalable and dynamic with <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ',
   },
   {
-    Icon: FaServer,
+    Icon: ServerIcon,
     title: 'Backend  Development',
     about:
       'I enjoy to use and build relational and nosql databases as well as servers, and api using <b>Express </b> & other popular frameworks',
@@ -26,7 +30,7 @@ export const services: Service[] = [
     about: 'I can build and implement robust  REST API using <b>Node.js</b> ',
   },
   {
-    Icon: SiGooglescholar,
+    Icon: BookOpenIcon,
     title: 'Lifelong Learner',
     about:
       'Always striving to grow as an engineer with <b>Leet Code</b>, and other available tools. ',
