@@ -1,11 +1,11 @@
-import { FunctionComponent, useState } from "react";
-import { AiFillGithub, AiFillProject } from "react-icons/ai";
-import { MdClose } from "react-icons/md";
-import { iProject } from "../helpers/types";
+import { FunctionComponent, useState } from 'react';
+import { AiFillGithub, AiFillProject } from 'react-icons/ai';
+import { MdClose } from 'react-icons/md';
+import { iProject } from '../helpers/types';
 
-import Image from "next/image";
-import { motion } from "framer-motion";
-import { fadeInUp, stagger } from "../helpers/animations";
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { fadeInUp, stagger } from '../helpers/animations';
 
 const ProjectCard: FunctionComponent<{
   project: iProject;
@@ -56,12 +56,14 @@ const ProjectCard: FunctionComponent<{
 
             <div className="flex justify-center my-4 space-x-3">
               <a
+                target="_blank"
                 href={github_url}
                 className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
               >
                 <AiFillGithub /> <span>Github</span>
               </a>
               <a
+                target="_blank"
                 href={deployed_url}
                 className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
               >
